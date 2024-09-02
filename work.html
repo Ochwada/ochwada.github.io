@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Profile - Home</title>
+    <title>My Profile - Work</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Sixtyfour&display=swap" rel="stylesheet">
@@ -22,44 +22,44 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                 <li class="nav-item"><a class="nav-link" href="cv.html">CV</a></li>
-                <li class="nav-item"><a class="nav-link" href="work.html">Work</a></li>
+                <li class="nav-item"><a class="nav-link active" href="work.html">Work</a></li>
                 <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
 
             </ul>
         </div>
     </nav>
 
-    <!-- Header Section -->
-    <header class="text-center profile-section ">
-        <h1 class="header-text" id="typing-text"> </h1>
-
-        <div class="container">
-            <div class="row align-items-center inline">
-                <div class="col-md-4 ">
-                    <img src="assets/linda.png" alt="linda" width="300" height="300" class="profile-image rounded-circle shadow-green">
-                </div> 
-                <div class="col-md-8 text-left">
-                    <p> <span class="text-success font-weight-bold">Niaje! </span> 
-                        I'm <span class="text-success font-weight-bold  ">Linda Ochwada </span> , a passionate Geospatial Coder and dynamic speaker with a deep love for
-                        all things tech and maps.
-                        With a background that merges coding expertise and geospatial knowledge, I specialize in
-                        creating innovative solutions
-                        that harness the power of geographic information systems (GIS) and coding to solve real-world
-                        problems.</p>
+    <!-- Work Section -->
+    <section class="container text-center profile-section">
+        <h2 class="section-title">My Work</h2>
+        <div class="row justify-content-center">
+            <div class="col-md-4 col-sm-6 col-12">
+                <div class="card">
+                    <img src="assets/linda.png" class="card-img-top img-fluid" alt="Project">
+                    <div class="card-body">
+                        <h5 class="card-title">Project 1</h5>
+                        <p class="card-text">Description of the project goes here.</p>
+                        <a href="#" class="btn btn-primary">View Project</a>
+                    </div>
                 </div>
             </div>
-
+            <div class="col-md-4 col-sm-6 col-12">
+                <div class="card">
+                    <img src="assets/linda.png" class="card-img-top img-fluid" alt="Project1">
+                    <div class="card-body">
+                        <h5 class="card-title">Project 2</h5>
+                        <p class="card-text">Description of the project goes here.</p>
+                        <a href="#" class="btn btn-primary">View Project</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Add more project cards as needed -->
         </div>
-       
+    </section>
 
-    </header>
-
-
-    <div class="map-background ">
-        <img src="assets/oldmap2.png" alt="old map" ><img/>
-    </div>
+    <!-- Footer -->
     <!-- Footer -->
     <footer class="text-center py-4 fixed-bottom">
         <p>&copy; <span id="currentYear"></span> ochwada. All rights reserved.</p>

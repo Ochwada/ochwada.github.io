@@ -1,29 +1,136 @@
+/* General Body Styles */
 body {
     font-family: 'Space Mono', monospace;
     background-color: #f4f4f9;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+}
+
+/* Navbar Links */
+.nav-link {
+
+    transition: color 0.3s ease;
+
+}
+
+.nav-link:hover {
+    color: grey;
+}
+
+/* Active Navbar Link */
+.nav-link.active {
+    color: grey;
+    font-weight: bold;
+}
+
+/* Header Text Styling */
 .header-text {
     font-family: 'Sixtyfour', sans-serif;
     font-size: 3rem;
     color: #333;
     margin-bottom: 1rem;
+    min-height: 50px;
+    margin: 2rem;
+
 }
 
-.navbar {
-    margin-bottom: 2rem;
+.profile-image {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    margin-top: 2rem;
+    /* Makes the image round */
+    box-shadow: 0px 0px 15px 5px rgba(0, 128, 0, 0.5);
+    /* Green shadow */
+}
+
+.map-background {
+    display: flex;
+    justify-content: center; /* Centers the content horizontally */
+    background-image: url('assets/oldmap2.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+   
+    overflow: hidden; /* Ensures no overflow if content exceeds container */
+}
+.map-background img {
+    max-width: 100%; /* Ensures the image doesn't exceed the container's width */
+    height: auto; /* Maintains aspect ratio */
+    object-fit: contain; /* Ensures the image is fully contained within the div */
 }
 
 .profile-section {
-    padding: 2rem 0;
+    padding: 40px 0;
 }
 
-.work-item, .event-item, .cv-item {
-    margin-bottom: 1.5rem;
-}
+/* Responsive Adjustments */
+@media (max-width: 767px) {
+    .header-text {
+        font-size: 2rem;
+    }
 
-.section-title {
-    font-family: 'Sixtyfour', sans-serif;
-    font-size: 2.5rem;
-    margin-bottom: 1.5rem;
+    #nav-arrow {
+        position: absolute;
+        bottom: 10px;
+        left: 10px;
+        cursor: pointer;
+        font-size: 2rem;
+        color: #333;
+    }
+
+    #nav-arrow span {
+        transition: transform 0.3s;
+    }
+
+    #nav-arrow:hover span {
+        transform: translateX(5px);
+    }
+
+
+    /* Typing effect */
+    #typing-text {
+        font-family: 'Sixtyfour', sans-serif;
+        font-size: 3rem;
+        white-space: nowrap;
+        overflow: hidden;
+        border-right: 3px solid;
+        /* Cursor */
+        display: inline-block;
+        animation: blink-caret 0.75s step-end infinite;
+    }
+
+    @keyframes blink-caret {
+
+        from,
+        to {
+            border-color: transparent;
+        }
+
+        50% {
+            border-color: green;
+        }
+    }
+
+
+
+
+
+
+
+
+
 }
